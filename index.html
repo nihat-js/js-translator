@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Language translator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="translater">
+            <div class="header">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Text"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="..." readonly ></textarea>
+            </div>
+            <div class="body">
+                <div class="left-row">
+                    <div class="foo">
+                        <i class="fas fa-volume-up" onclick="speech('left')" ></i>
+                    <i class="fas fa-copy" onclick="copy('left')"></i>
+                    </div>
+                    <select name="" id="">
+                        <option value="en"> English </option>
+                        <option value="az"> Azerbaycan</option>
+                        <option value="tr"> Turk </option>
+                    </select>
+                </div>
+                <div class="middle-row">
+                    <i  onclick="exchange()" class="fas fa-exchange"></i>
+                </div>
+                <div class="right-row">
+                    <select name="" id="">
+                        <option value="az"> Azerbaycan</option>
+                        <option value="tr"> Turk </option>
+                        <option value="en"> English </option>
+                    </select>
+                    <i class="fas fa-volume-up" onclick="speech('right')" ></i>
+                    <i class="fas fa-copy" onclick="copy('right')"></i>
+                </div>
+            </div>
+            <div class="footer">
+                <button id="translate">  Translate now </button>
+            </div>
+        </div>
+    </div>
+    <!-- GitHub @nihatxss  -->
+    <!-- Thanks for your support -->
+    <script src="main.js"></script>
+    <footer>
+        GitHub @nihatxss
+    </footer>
+</body>
+</html>
